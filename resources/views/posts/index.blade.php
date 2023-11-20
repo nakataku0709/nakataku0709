@@ -13,6 +13,7 @@
         <a href="/posts/create">create</a>
         <div class='posts'>
             @foreach ($posts as $post)
+                <a href="">{{ $post->category->name }}</a>
                 <div class='post'>
                     <a href="/posts/{{ $post->id }}"><h2 class='title'>{{ $post->title }}</h2></a>
                     <p class='body'>{{ $post->body }}</p>
